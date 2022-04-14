@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Instalation
+## Installation
 ### Install Composer
 Laravel utilizes Composer to manage its dependencies. First, download a copy of the composer.phar. Once you have the PHAR archive, you can either keep it in your local project directory or move to usr/local/bin to use it globally on your system. On Windows, you can use the [Composer Windows installer](https://getcomposer.org/Composer-Setup.exe).
 
@@ -30,6 +30,20 @@ Clone the git repository, then `cd` into the folder's project. Run `composer ins
 Copy `.env.example` file to `.env` on the root folder. 
 >
 Open your `.env` file and change the database name (`DB_DATABASE`) to your empty database, username (`DB_USERNAME`) and password (`DB_PASSWORD`) field correspond to your configuration.
-
+>
+Run `npm install` for installing the NPM dependencies.
+>
+After modifying the `.env` file correctly, run `php artisan migrate` for creating the db with all the tables.
+>
+Run the following commands for seeding the database:
+>
+* `php artisan db:seed ClassesSeeder`
+* `php artisan db:seed SubjectSeeder`
+* `php artisan db:seed DatabaseSeeder`
+* `php artisan db:seed StudentsSeeder`
+* `php artisan db:seed ProfessorsSeeder`
+* `php artisan db:seed TeachingSeeder`
+* `php artisan db:seed AbsencesSeeder`
+* `php artisan db:seed GradesSeeder`
 
 
