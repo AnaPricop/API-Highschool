@@ -78,4 +78,18 @@ All the requests, `GET`, `POST`, `PUT`, `DELETE` are used.
 ### Controllers
 Controllers can group related request handling logic into a single class. For example, a `UserController` class might handle all incoming requests related to users, including showing, creating, updating, and deleting users. By default, controllers are stored in the app/Http/Controllers directory.
 >
-There is one controller for every Model (table) we made so that we can store all the methods for the routes. After creating all the methods correctly, our API is working and we can use all the requests from `web.php`.
+There is one controller for every Model (table) we made so that we can store all the methods for the routes. After creating all the methods correctly, our API is working and we can use all the requests from `web.php`, deppending on which type of user is logged in.
+### Resources
+When building an API, you may need a transformation layer that sits between your Eloquent models and the JSON responses that are actually returned to your application's users. For example, you may wish to display certain attributes for a subset of users and not others, or you may wish to always include certain relationships in the JSON representation of your models. Eloquent's resource classes allow you to expressively and easily transform your models and model collections into JSON.
+>
+Of course, you may always convert Eloquent models or collections to JSON using their `toJson` methods; however, Eloquent resources provide more granular and robust control over the JSON serialization of your models and their relationships.
+There are 5 resources made in this project, every resource including a function like:
+![aaaaa](https://user-images.githubusercontent.com/60388013/163420867-99608f36-dc07-4e1b-95c4-663c33a256b1.PNG)
+
+### Folders
+* app - Contains all the Eloquent models
+* app/Http/Controllers/Api - Contains all the api controllers
+* app/Http/Middleware - Contains the middlewares
+* app/Http/Resources - Contains all the used resources
+
+
