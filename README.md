@@ -75,4 +75,7 @@ In web.php, we have all the routes for the API:
 A middleware was used, called `Admin.php`, in which is verrified if the logged user is admin or a normal user. If we log in as an admin, we can use all the routes from the image, if not, we are redirected on our user page, which uses these requests:
 ![router2](https://user-images.githubusercontent.com/60388013/163417644-ae3ca043-ab55-45cd-85e2-ceb3be5fb741.PNG)
 All the requests, `GET`, `POST`, `PUT`, `DELETE` are used.
-
+### Controllers
+Controllers can group related request handling logic into a single class. For example, a `UserController` class might handle all incoming requests related to users, including showing, creating, updating, and deleting users. By default, controllers are stored in the app/Http/Controllers directory.
+>
+There is one controller for every Model (table) we made so that we can store all the methods for the routes. After creating all the methods correctly, our API is working and we can use all the requests from `web.php`.
