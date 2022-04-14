@@ -15,7 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/7b4eb34dc9.js" crossorigin="anonymous"></script>
     <title>Laravel</title>
-    <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/cards.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -24,9 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     @if (Auth::check())
         <meta name="user-id" content="{{ Auth::user()->email }}">
-@endif
-<!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @endif
 </head>
 <body>
 <div id="app">
@@ -47,7 +44,8 @@
 
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" style="color:#393a41;" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link" style="color:#393a41;"
+                               href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                     @endif
                 @else
