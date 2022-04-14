@@ -89,9 +89,17 @@ There are 5 resources made in this project, every resource including a function 
 ![aaaaa](https://user-images.githubusercontent.com/60388013/163420867-99608f36-dc07-4e1b-95c4-663c33a256b1.PNG)
 
 ### Folders
-* app - Contains all the Eloquent models
-* app/Http/Controllers/Api - Contains all the api controllers
-* app/Http/Middleware - Contains the middlewares
-* app/Http/Resources - Contains all the used resources
+* `app` - Contains all the Eloquent models
+* `app/Http/Controllers/Api` - Contains all the api controllers
+* `app/Http/Middleware` - Contains the middlewares
+* `app/Http/Resources` - Contains all the used resources
 
+## Available functionalities
+* Register, login and logout 
+* Manage professors ( View table, add new professor, edit)
+* Manage students ( View table, add new students, edit, delete)
+* Manage grades ( View table, add new grade, edit, delete)
+* Search fields
+
+## 
 
