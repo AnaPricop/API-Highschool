@@ -51,6 +51,7 @@ Use the `php artisan serve` command, then go to `http://localhost:8000/`.
 
 ## Database Informations
 The "highschool" database has 7 tables, with foreign keys, described in the next image:
+>
 ![db](https://user-images.githubusercontent.com/60388013/163412137-0321afa4-27f7-40a4-8ab2-8801b32f7697.PNG)
 
 There is the `users table` too, which has `name`, `email`, `password` and `isAdmin` fields. `isAdmin` has the value `1` if the user is an admin, and `0` if the user is a student or a normal user.
@@ -73,6 +74,7 @@ In these models, we have attributes to the $fillable field so that we can use th
 In web.php, we have all the routes for the API:
 >
 ![routes](https://user-images.githubusercontent.com/60388013/163416702-60a5c941-1bdc-469a-b418-81579fddadb0.PNG)
+>
 A middleware was used, called `Admin.php`, in which is verrified if the logged user is admin or a normal user. If we log in as an admin, we can use all the routes from the image, if not, we are redirected on our user page, which uses these requests:
 ![router2](https://user-images.githubusercontent.com/60388013/163417644-ae3ca043-ab55-45cd-85e2-ceb3be5fb741.PNG)
 All the requests, `GET`, `POST`, `PUT`, `DELETE` are used.
@@ -86,6 +88,7 @@ When building an API, you may need a transformation layer that sits between your
 Of course, you may always convert Eloquent models or collections to JSON using their `toJson` methods; however, Eloquent resources provide more granular and robust control over the JSON serialization of your models and their relationships.
 >
 There are 5 resources made in this project, every resource including a function like:
+>
 ![aaaaa](https://user-images.githubusercontent.com/60388013/163420867-99608f36-dc07-4e1b-95c4-663c33a256b1.PNG)
 
 ### Folders
