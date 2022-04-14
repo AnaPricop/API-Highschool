@@ -58,6 +58,21 @@ There is the `users table` too, which has `name`, `email`, `password` and `isAdm
 Every created student has an account, and the email is made of the string `student` + `registration_number` + `@gmail.com`, password being a string formed with `student` + `registration_number` (assuming that registration number is private). 
 
 ## API
-
-
+There are `models` for every created table, such as:
+* `Absence`
+*  `ClassStud`
+*  `Grade` 
+*  `Professor`
+*  `Student`
+*  `Subject`
+*  `Teaching`
+*  `User`.
+>
+In these models, we have attributes to the $fillable field so that we can use them in our requests.
+>
+In web.php, we have all the routes for the API:
+![routes](https://user-images.githubusercontent.com/60388013/163416702-60a5c941-1bdc-469a-b418-81579fddadb0.PNG)
+A middleware was used, called `Admin.php`, in which is verrified if the logged user is admin or a normal user. If we log in as an admin, we can use all the routes from the image, if not, we are redirected on our user page, which uses these requests:
+![router2](https://user-images.githubusercontent.com/60388013/163417644-ae3ca043-ab55-45cd-85e2-ceb3be5fb741.PNG)
+All the requests, `GET`, `POST`, `PUT`, `DELETE` are used.
 
