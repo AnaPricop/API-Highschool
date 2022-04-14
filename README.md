@@ -26,7 +26,9 @@ composer create-project laravel/laravel {directory} 4.2 --prefer-dist
 ```
 ## Setup the project
 Clone the git repository, then `cd` into the folder's project. Run `composer install`.
+>
 Copy `.env.example` file to `.env` on the root folder. 
+>
 Open your `.env` file and change the database name (`DB_DATABASE`) to your empty database, username (`DB_USERNAME`) and password (`DB_PASSWORD`) field correspond to your configuration.
 
 
