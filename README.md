@@ -46,4 +46,7 @@ Run the following commands for seeding the database:
 * `php artisan db:seed AbsencesSeeder`
 * `php artisan db:seed GradesSeeder`
 
+## Run the project
+Use the `php artisan serve` command, then go to `http://localhost:8000/`.
+
 
