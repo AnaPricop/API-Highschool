@@ -103,6 +103,23 @@ There are 5 resources made in this project, every resource including a function 
 * Manage students ( View table, add new students, edit, delete)
 * Manage grades ( View table, add new grade, edit, delete)
 * Search fields
+* Charts ( Grades data display)
+* >
+To login as admin, use `admin@gmail.com` with password `admin12345`.
+>
+To login as a student, find the registration number for the student you want to log in with, then use the email `student{registration_number}@gmail.com`, with the password `student{registration_number}`.
 
-## 
+## Preview
+>
+![adnn](https://user-images.githubusercontent.com/60388013/163440599-61e02956-466b-4a77-8f90-4bb833f68dd5.PNG)
+>
+After you login as the admin, the page will redirect you to the Admin Dashboard, where you can see the top 3 students (with their average), students that have more than 10 absences, and informations. 
+>
+In the sidebar, you can see `Classes`, `Professors`, `Students`, `Absences` and `Grades`, a table for every page. 
+>
+For example. the students page:
+![stud](https://user-images.githubusercontent.com/60388013/163441908-64ff10b2-e93f-4c93-88be-6beaf6d2cb27.PNG)
+>
+There is a search field, an add button, edit buttons for every student and delete button.
+
 
