@@ -49,4 +49,10 @@ Run the following commands for seeding the database:
 ## Run the project
 Use the `php artisan serve` command, then go to `http://localhost:8000/`.
 
+## Database Informations
+The "highschool" database has 7 tables, with foreign keys, described in the next image:
+![db](https://user-images.githubusercontent.com/60388013/163412137-0321afa4-27f7-40a4-8ab2-8801b32f7697.PNG)
+
+
+
 
