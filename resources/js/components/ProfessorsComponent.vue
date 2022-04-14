@@ -160,12 +160,12 @@ export default {
                 {
                     key: "firstname",
                     label: "Name",
-                    editable: true
+                    sortable: true
                 },
                 {
                     key: "lastname",
                     label: "Lastname",
-                    editable: true
+                    sortable: true
                 },
                 {
                     key: "gender",
@@ -175,17 +175,17 @@ export default {
                 {
                     key: "year",
                     label: "Year",
-                    editable: true
+                    sortable: true
                 },
                 {
                     key: "group",
                     label: "Group",
-                    editable: true
+                    sortable: false
                 },
                 {
                     key: "subject_title",
                     label: "Subject",
-                    editable: true
+                    sortable: true
                 },
                 "Actions"
             ],

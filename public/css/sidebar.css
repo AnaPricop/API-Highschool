@@ -67,7 +67,7 @@
     padding: 17px 17px 17px 17px;
     align-content: center;
     font-size: 28px;
-    background-color: #D07a55;
+    background-color: #7c90e4;
     border-bottom: 2px solid white;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .sidebar-navigation li::before {
-    background-color: #D07a55;
+    background-color: rgba(124, 144, 228, 0.7);
     position: absolute;
     content: '';
     height: 100%;

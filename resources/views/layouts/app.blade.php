@@ -27,7 +27,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color:#E8b6a1;">
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color:#7c90e4;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">

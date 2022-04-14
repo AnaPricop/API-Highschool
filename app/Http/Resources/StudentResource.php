@@ -21,8 +21,6 @@ class StudentResource extends JsonResource
             'class_id' => $this->class_id,
             'date_of_birth' => $this->date_of_birth,
             'gender' => $this->gender,
-//            'created_at' => $this->created_at,
-//            'updated_at' => $this->updated_at,
         ];
     }
 }

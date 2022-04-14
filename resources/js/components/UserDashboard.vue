@@ -5,7 +5,7 @@
         </div>
         <div class="my-container active-cont">
             <div class="row">
-                <div class="col-lg-12 p-2">
+                <div class="col-lg-12">
                     <h1><i class="fa fa-tachometer" aria-hidden="true"></i> User Dashboard - Average: {{this.value}}</h1>
                     <hr/>
                 </div>
