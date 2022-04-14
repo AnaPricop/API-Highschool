@@ -71,6 +71,7 @@ There are `models` for every created table, such as:
 In these models, we have attributes to the $fillable field so that we can use them in our requests.
 >
 In web.php, we have all the routes for the API:
+>
 ![routes](https://user-images.githubusercontent.com/60388013/163416702-60a5c941-1bdc-469a-b418-81579fddadb0.PNG)
 A middleware was used, called `Admin.php`, in which is verrified if the logged user is admin or a normal user. If we log in as an admin, we can use all the routes from the image, if not, we are redirected on our user page, which uses these requests:
 ![router2](https://user-images.githubusercontent.com/60388013/163417644-ae3ca043-ab55-45cd-85e2-ceb3be5fb741.PNG)
@@ -83,6 +84,7 @@ There is one controller for every Model (table) we made so that we can store all
 When building an API, you may need a transformation layer that sits between your Eloquent models and the JSON responses that are actually returned to your application's users. For example, you may wish to display certain attributes for a subset of users and not others, or you may wish to always include certain relationships in the JSON representation of your models. Eloquent's resource classes allow you to expressively and easily transform your models and model collections into JSON.
 >
 Of course, you may always convert Eloquent models or collections to JSON using their `toJson` methods; however, Eloquent resources provide more granular and robust control over the JSON serialization of your models and their relationships.
+>
 There are 5 resources made in this project, every resource including a function like:
 ![aaaaa](https://user-images.githubusercontent.com/60388013/163420867-99608f36-dc07-4e1b-95c4-663c33a256b1.PNG)
 
