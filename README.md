@@ -53,6 +53,11 @@ Use the `php artisan serve` command, then go to `http://localhost:8000/`.
 The "highschool" database has 7 tables, with foreign keys, described in the next image:
 ![db](https://user-images.githubusercontent.com/60388013/163412137-0321afa4-27f7-40a4-8ab2-8801b32f7697.PNG)
 
+There is the `users table` too, which has `name`, `email`, `password` and `isAdmin` fields. `isAdmin` has the value `1` if the user is an admin, and `0` if the user is a student or a normal user.
+>
+Every created student has an account, and the email is made of the string `student` + `registration_number` + `@gmail.com`, password being a string formed with `student` + `registration_number` (assuming that registration number is private). 
+
+## API
 
 
 
